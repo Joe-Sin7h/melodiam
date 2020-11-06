@@ -154,22 +154,7 @@ def comment_post(request,id):
 
     return render(request,'comments.html',locals())
 
-def likepost(request):
-    id_ = request.GET.get('likeId')
-    post = Post.objects.get(pk=id_)
-    like = Like.objects.filter(post=post,user=request.user)
-    liked = False
-    if liked:
-        Like.dislike(post,request.user)
-    else:
-        liked = True
-        Like.like(post,request.user)
-    resp = {
-        'liked':liked
-    }
 
-    response = json.dumps(resp)
-    return HttpResponse(response,content_type='application/json')
 
     
 

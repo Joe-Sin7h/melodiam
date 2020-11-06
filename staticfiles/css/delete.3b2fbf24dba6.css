@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+form{
+    
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.829) 37%, rgb(255, 255, 255) 100%);
+    border-radius:10px;
+    position: absolute;
+    top:15%;
+    left:30%;
+    margin:0 auto;
+    width:40%;
+    height: 60vh;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    display: table;
+}
+
+form *{
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+form img{
+    float:right;
+    
+}
+
+form h3{
+    float:left;
+}
+
+form a{
+    text-decoration: none;
+    text-align: center;
+    width:150px;
+    height: 45px;
+    border-radius: 10px;
+    border-width:0;
+    background-color: black;
+    color: darkturquoise;
+    float: right;
+    padding-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:bold;
+    font-size:15px;
+    display:table-cell;
+}
+
+form button{
+    width:150px;
+    height: 45px;
+    border-radius: 10px;
+    border-width:0;
+    background-color: black;
+    color: darkturquoise;
+    float: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    display:table-cell;
+}
+.row{
+    display:table-row;
+    
+}
+
+.row-2{
+    display:table-row;
+}
+
+@media screen and (max-width: 786px){
+    
+form{
+    
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.829) 37%, rgb(255, 255, 255) 100%);
+    border-radius:10px;
+    position: absolute;
+    top:15%;
+    left:25%;
+    margin:0 auto;
+    width:50%;
+    height: 60vh;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    display: table;
+}
+
+form img{
+    float:right;
+    
+}
+
+form h3{
+    float:left;
+}
+
+form a{
+    text-decoration: none;
+    text-align: center;
+    width:155px;
+    height: 45px;
+    border-radius: 10px;
+    border-width:0;
+    background-color: black;
+    color: darkturquoise;
+    float: left;
+    padding-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:bold;
+    font-size:18px;
+    display:table-cell;
+}
+
+form button{
+    width:155px;
+    height: 45px;
+    border-radius: 10px;
+    border-width:0;
+    background-color: black;
+    color: darkturquoise;
+    float: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    display:table-cell;
+}
+.row{
+    display:table-row;
+    
+}
+
+.row-2{
+    display:table-row;
+}
+
+
+
+}

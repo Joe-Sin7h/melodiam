@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Great+Vibes&family=Josefin+Slab:ital,wght@1,100&family=Open+Sans&family=Parisienne&display=swap');
+
+/* font-family: 'Josefin Slab', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Parisienne', cursive;
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Emilys Candy', cursive;
+    background: rgb(2,0,36);
+    background: linear-gradient(360deg, rgb(8, 131, 207) 0%, rgba(67, 200, 233, 0.829) 37%, rgba(255,255,255,1) 100%);
+     */
+body{
+   background: url("../images/back.76282b8078cb.png");
+   background-size: cover;
+  
+   margin-bottom: 270px;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+
+
+
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+nav{
+    position: static;
+    height: 10vh;
+    background:black;
+    display: flex;
+    border-bottom-width:2px ;
+   
+
+}
+.nav-links{
+    position: static;
+    
+    display:flex;
+    width:35%;
+    list-style: none;
+    
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    
+
+
+
+}
+.logo{
+    position: static;
+    
+    display:flex;
+    width:50%;
+    list-style: none;
+    
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: auto;
+    margin: 2px;
+    
+
+
+
+}
+.logo h2{
+    font-family: 'Emilys Candy', cursive;
+    color: white;
+    font-weight: bolder;
+    font-size: 35px;
+    
+}
+.nav-links li a{
+    color:white;
+    text-decoration:none;
+    font-family: 'Open Sans', sans-serif;
+    font-size:18px;
+
+}
+.landing{
+    position: absolute;
+    /* background: url("../images/music4.865c54347189.jpg"); */
+    background-size: cover;
+    background-position:center;
+   
+    margin-top: 30px;
+    display: inline-block;
+    width:50%;
+    height: 50vh;
+    margin-left:5%;
+    margin-right: 8%;
+    
+    justify-content: center;
+    align-items: center;
+    padding:40px;
+    
+    border-radius: 10px;
+    background:linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.829) 37%, rgba(255,255,255,1) 100%);
+   
+    
+   
+
+}
+
+
+.landing .link{
+    
+    font-family: monospace;
+    visibility:visible;
+    margin-left: 3%;
+    margin-right: 3%;
+    display: block;
+    text-decoration: none;
+    width: 95%;
+    height: 40px;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: rgb(5, 5, 5);
+    justify-content: center;
+    color:white;
+    align-items: center;
+    border-radius: 10px;   
+}
+.landing .link:hover{
+    box-shadow: 1px 1px 15px 1px rgb(0, 0, 0) inset;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    opacity: 0.9;
+    transition:  all 0.4s ease-in;
+}
+.landing .or{
+   
+    visibility:visible;
+    margin-left: 3%;
+    margin-right: 0;
+    display: block;
+    text-decoration: none;
+    width: 95%;
+    height: 40px;
+    padding: 10px;
+    margin-top: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer{
+  position: absolute;
+  left: 0;
+  bottom: -31%;
+  width: 100%;
+  height:200px;
+ 
+  background: linear-gradient(50deg, rgb(0, 0, 0) 7%, rgba(84, 85, 85, 0.774) 37%, rgb(236, 235, 235) 100%);
+  color: white;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.footer .image{
+    position: static;
+    margin-top: 50px;
+    display:flex;
+    width:100%;
+    list-style: none;
+    
+    height: 10%;
+    justify-content: space-around;
+    align-items: center;
+    
+
+
+}
+.footer .image img{
+    width:60px;
+    height: 60px;
+    
+}
+.footer .image a{
+    text-decoration: none;
+}
+.footer .image .fiverr{
+    width:55px;
+    height: 56px;
+    
+}
+.footer .image .insta{
+    width:62px;
+    height: 64px;
+    
+}
+
+.footer .end{
+    
+    position: static;
+    margin-top: 60px;
+    display:flex;
+    width:100%;
+    font-family:  'Emilys Candy', cursive;
+    
+    list-style: none;
+    
+    height: 10%;
+    
+    align-items: center;
+
+}
+.footer .end h3{
+    font-family:  'Emilys Candy', cursive;
+    color:white;
+    width:200px;
+    margin-left: 150px;
+
+}
+.footer .end img{
+    width:50px;
+    height: 50px;
+    position: absolute;
+    left:10%;
+}
+
+.display{
+    display: flex;
+    position: absolute;
+    margin-left: 5%;
+    font-family: 'Parisienne', cursive;
+    font-size: 3vh;
+    display:flex;
+    width:45%;
+    margin-top: 300px;
+    height: 45vh;
+    justify-content: space-around;
+    align-items: center;
+    
+    background-color: transparent;
+
+}
+
+.display .my-image{
+    display: flex;
+    
+    position: relative;
+    height:70px;
+    width:70px;
+    top:-25%;
+    
+    justify-content: left;
+    align-items: left;
+    border-radius: 50%;
+    box-shadow: 3px 3px 70px 2px  black;
+    
+
+   
+
+}
+.display h3{
+    font-size: 5vh;
+    color: rgb(11, 76, 218);
+    font-weight: bolder;
+}
+
+.display .ist{
+    color: rgb(102, 104, 105);
+    display: inline-flex;
+    position: relative;
+    top:-10%;
+    font-family: 'Parisienne', cursive;
+    font-size: 13vh;
+
+}
+
+.display .ind{
+    color: rgb(102, 104, 105);
+    display: inline-flex;
+    font-family: 'Parisienne', cursive;
+    position: relative;
+    top:45%;
+    font-size: 13vh;
+    
+}
+.side img{
+    position: relative;
+    top:10%;
+    left:10%;
+    height: 40px;
+}
+
+@media screen and (max-width: 786px){
+    body{
+        background: url("../images/back1.8a83253a7aae.png");
+        background-position: left;
+        background-size: cover;
+        margin-bottom: 270px;
+        height: 90vh;
+        margin-bottom: 270px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .footer{
+    position: absolute;
+   left: 0;
+   bottom: -40%;
+   width: 100%;
+   height:30vh;
+   
+   
+   text-align: center;
+   z-index: -1;
+   
+
+    }
+    
+    .line{
+        width:30px;
+        height: 3px;
+        background-color:white;
+        margin:5px;
+        z-index:1;
+
+    }
+    nav{
+        position: relative;
+
+    }
+    .display{
+        position: absolute;
+        width:90%;
+
+    }
+    .hamburger{
+        position:absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%,-50%);
+        z-index:2;
+    }
+    .nav-links{
+        position:fixed;
+        background:black;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        width:100%;
+        flex-direction: column;
+        clip-path: circle(100px at 90% -100%);
+        -webkit-clip-path :circle(100px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+        visibility: hidden;
+        height: 100vh;
+        width:100%;
+        z-index:1;
+        
+        
+        
+
+    }
+    
+    .nav-links.open{
+        visibility:visible;
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path :circle(1000px at 90% -10%);
+        pointer-events: all;
+        z-index: 1;
+    } 
+    .landing{
+        flex-direction: column;
+    }
+    .landing{
+        width: 90vw;
+        margin-left:3%;
+        margin-right:100px;
+        background-size: none;
+        background-position: none;
+        
+        
+
+    }
+    .side{
+        display:none;
+    }
+    .display .ist{
+        font-size: 12vh;
+        top:-28%;
+        
+    }
+    .display .ind{
+        font-size: 12vh;
+    }
+    .display h3{
+        text-align: right;
+        padding:4px;
+        font-size: 4vh;
+    }
+    .display .image{
+        top: -30%;
+    }
+}

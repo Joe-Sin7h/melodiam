@@ -14,7 +14,7 @@
     </a>
     <a href='{% url "detail_comment" song.id %}' class='comment'> <button>Add Comment</button>
         </a>
-    <!-- <a href='{% url "likedpost"  %}' class='like' id='{{song.id}}'>Like</a> -->
+   
 
 </div>
  
@@ -200,7 +200,7 @@ function playSong(){
             total_time = song.duration;
             range.max = total_time;
             play_img.src = "{% static 'images/pause.png'%}";
-        }else{
+        }else{ 
             song.pause();
             isPlaying = false;
             play_img.src = "{% static 'images/play.png'%}";
@@ -224,23 +224,4 @@ function playSong(){
 </script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
-{% block js%}
-<script>
-    $(".like").click(function(e){
-        var id = this.id;
-        var href = this.href
-        console.log(href,id)
-        e.preventDefault();
-        $.ajax({
-            url:href,
-            data:{'likeId':id},
-        },
-        success:function(response){
-            console.log(response);
-        }
-        )
-    })
-
-</script>
-{%endblock js%}
 {% endblock %}

@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Great+Vibes&family=Josefin+Slab:ital,wght@1,100&family=Open+Sans&family=Parisienne&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+
+}
+body{
+    background: url('../images/back.png');
+    background-size: cover;
+   
+    margin-bottom: 270px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+ 
+ 
+ 
+}
+
+nav{
+    position: static;
+    height: 10vh;
+    background:black;
+    display: flex;
+    border-bottom-width:2px ;
+   
+
+}
+.nav-links{
+    position: static;
+    
+    display:flex;
+    width:35%;
+    list-style: none;
+    
+    
+    justify-content: space-around;
+    align-items: center;
+    
+
+
+
+}
+.logo{
+    position: static;
+    
+    display:flex;
+    width:65%;
+    list-style: none;
+    
+    
+    justify-content: space-around;
+    align-items: center;
+    margin-right: auto;
+    margin: 2px;
+    
+
+
+
+}
+.logo h2{
+    font-family: 'Emilys Candy', cursive;
+    color: white;
+    font-weight: bolder;
+    font-size: 35px;
+    
+}
+.nav-links li a{
+    color:white;
+    text-decoration:none;
+    font-family: 'Open Sans', sans-serif;
+    font-size:18px;
+
+}
+
+
+
+.footer{
+   
+    position: absolute;
+ 
+   
+    width: 100%;
+    height:30vh;
+    
+   
+    background: linear-gradient(50deg, rgb(0, 0, 0) 7%, rgba(84, 85, 85, 0.774) 37%, rgb(236, 235, 235) 100%);
+    color: white;
+    text-align: center;
+   
+    top:100vh 
+}
+  
+.footer .image{
+      position: relative;
+      margin-top: 50px;
+      display:flex;
+      width:100%;
+      list-style: none;
+      
+      height: 10%;
+      justify-content: space-around;
+      align-items: center;
+      
+  
+  
+}
+  .footer .image img{
+      width:60px;
+      height: 60px;
+      
+}
+.footer .image a{
+      text-decoration: none;
+}
+.footer .image .fiverr{
+      width:55px;
+      height: 56px;
+      
+}
+.footer .image .insta{
+      width:62px;
+      height: 64px;
+      
+}
+  
+.footer .end{
+      
+      position: relative;
+      margin-top: 60px;
+      display:flex;
+      width:100%;
+      font-family:  'Emilys Candy', cursive;
+      
+      list-style: none;
+      
+      height: 10%;
+      
+      align-items: center;
+  
+}
+  .footer .end h3{
+      font-family:  'Emilys Candy', cursive;
+      color:white;
+      width:200px;
+      margin-left: 150px;
+  
+}
+.footer .end img{
+      width:50px;
+      height: 50px;
+      position: absolute;
+      left:10%;
+}
+form{
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.829) 37%, rgba(255,255,255,1) 100%);
+    border-radius:10px;
+    position: absolute;
+    top:12%;
+    left:5%;
+    margin:0 auto;
+    width:50%;
+    height: 75vh;
+    
+}
+section{
+    position: absolute;
+    display: flex;
+    width: 40%;
+    height: 90%;
+    left:60%;
+    background: url('../images/gif.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+small{
+    background-color: rgba(255, 255, 255, 0.897);
+    border-radius:10px;
+    position: absolute;
+    top:90%;
+    left:5%;
+    margin:0 auto;
+    width:50%;
+    height: 7vh;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    text-align: center;
+    padding:12px;
+    font-size: 15px;
+}
+legend{
+    width: 100%;
+    position: relative;
+    height: 55px;
+    padding-top:10px;
+    text-align: center;
+    background-color: white;
+    font-size:35px;
+    font-family: 'Parisienne', cursive;
+    font-weight: bolder;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-bottom: 2px;
+
+}
+form img{
+   
+    height:100%;
+    width:40%;
+    float: left;
+    
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    background:transparent;
+}
+form div{
+
+    height:19%;
+    background:transparent;
+    width: 100%;
+    margin-top:4px;
+
+    margin:0 auto;
+    
+    
+
+   
+   
+}
+
+form div h3{
+    position: relative;
+   
+    width:60%;
+    height: 100%;
+    
+    float: right;
+    
+    background:transparent;
+    text-align: center;
+    margin-top: 0;
+    padding: 25px;
+    font-size:5vh;
+    font-family: cursive;
+
+}
+
+.ist{
+    margin-top: 5px;
+    height: 30px;
+    width:100%;
+    text-align: center;
+}
+
+form a{
+    text-decoration: none;
+}
+
+.last{
+    
+    background: transparent;
+    margin-top: 5px;
+
+}
+.last h3{
+    width: 100%;
+   
+    font-family: 'Parisienne', cursive;
+    font-size: 32px;
+}
+
+
+
+@media screen and (max-width: 786px){
+   
+    body{
+        background: url('../images/back1.png');
+        background-position: left;
+        background-size: cover;
+        margin-bottom: 270px;
+        height: 90vh;
+        margin-bottom: 270px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    small{
+        width: 90%;
+        left:5%;
+        right: 5%;
+        top:100%;
+
+    }
+   
+   
+  
+    nav{
+        position: relative;
+
+    }
+
+    
+    .hamburger{
+        position:absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%,-50%);
+        z-index:2;
+    }
+    .nav-links{
+        position:fixed;
+        background:black;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        width:100%;
+        flex-direction: column;
+        clip-path: circle(100px at 90% -100%);
+        -webkit-clip-path :circle(100px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+        visibility: hidden;
+        height: 100vh;
+        width:100%;
+        z-index:1;
+        
+        
+        
+
+    }
+    
+    .nav-links.open{
+        visibility:visible;
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path :circle(1000px at 90% -10%);
+        pointer-events: all;
+        z-index: 1;
+        
+        
+    }
+    .line{
+        width:30px;
+        height: 3px;
+        background-color:white;
+        margin:5px;
+        z-index:1;
+        
+    }
+    section{
+        display: none;
+    }
+    
+
+.footer{
+    position: absolute;
+   left: 0;
+   
+   width: 100%;
+   height:30vh;
+   top:110vh;
+   
+   
+   text-align: center;
+   z-index: -1;
+   
+
+    }
+form{
+        width: 90%;
+        left:5%;
+        right: 5%;
+        height: 85vh;
+        
+    }
+    
+
+form div h3{
+    position: relative;
+   
+    width:100%;
+    height: 45%;
+    
+    float: right;
+    
+    background:transparent;
+    text-align: center;
+    margin-top: 0;
+    padding: 25px;
+    font-size:3vh;
+    font-family: cursive;
+
+}
+.last h3{
+    font-size: 22px;
+}
+form img{
+   
+    height:55%;
+    width:100%;
+    padding-left:42% ;
+    padding-right: 42%;
+    
+    margin:0 auto;
+    background:transparent;
+    border-bottom: 5px solid black;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius:15px;
+}
+
+}

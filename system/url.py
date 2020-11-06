@@ -34,4 +34,4 @@ urlpatterns = [
     path("error",error_404)
 ] 
 
-# handler404 = "system.views.error_404"
+handler404 = "system.views.error_404"
