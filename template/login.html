@@ -1,0 +1,50 @@
+{% extends 'base2.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+{% load static %}
+<link  rel='stylesheet' href='{% static "css/login.css"%}'></link>
+<script src='{% static "javascript/login.js"%}' defer></script>
+<nav>
+  <div class='logo'>
+      <img src='{% static "images\music.png" %}' width=45>
+      <h2>Melodiam</h2>
+
+  </div>
+  <div class='hamburger'>
+      <div class='line'></div>
+      <div class='line'></div>
+      <div class='line'></div>
+
+
+
+  </div>
+  <ul class='nav-links'>
+      <li ><a href='{% url "melodiam" %}'>Home</a></li>
+      
+      <li ><a href='{% url "about"%}'>About</a></li>
+      <li ><a href='{% url "contact"%}'>Contact</a></li>
+      
+
+
+  </ul>
+</nav>
+
+<form method='POST'>{% csrf_token%}
+    
+        <legend>Melodiam</legend>
+        {{form|crispy}}
+    
+    <br/>
+    <input  class='button' type='submit' value='login'>
+
+</form>
+<section>
+  
+   
+  
+</section>
+
+<br/>
+<small class='reset'>Forgot Password ? <a href='{% url "password_reset"%}'>reset password</a></small>
+<small class='register'>Not a member ? <a href='{% url "register"%}'>register</a></small>
+{% endblock %}

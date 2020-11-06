@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+
+
+<form method='POST'>
+    {% csrf_token%}
+    
+    {{c_form|crispy}}
+
+
+<br/>
+<input  class='button' type='submit' value='POST'>
+
+</form>
+
+{% for c in comments %}
+   <strong>{{c.name}}   : {{c.postingtime}} </strong>
+   <br>
+   {{c.content}}
+   <br>
+   <br>
+   <br>
+{% endfor %}  
+
+<style>
+    
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
+
+     *{
+        margin:0;
+        box-sizing: border-box;
+    }
+    .form-group .requiredField {
+        display:None;
+    }
+    #id_content{
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        height: 100px;
+        margin-top: 40px;
+        font-family: 'Barlow', sans-serif;
+        padding: 10px;
+    }
+    #id_content:active{
+        outline-color: black;
+
+    }
+    .button{
+        width:40%;
+        height:40px;
+        border-radius: 10px;
+        background-color: black;
+        color:darkturquoise;
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-bottom: 30px;
+    }
+    strong{
+        margin-left: 10%;
+    }
+
+@media screen and (max-width:786px) {
+
+    strong{
+        margin-left: 10%;
+    }
+    #id_content:hover{
+        outline-color: black;
+
+    }
+    #id_content:active{
+        outline-color: black;
+
+    }
+}
+</style>
+   
+
+{% endblock %}
+<!-- <link rel="stylesheet" href="{% static '' %}"> -->

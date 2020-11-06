@@ -1,0 +1,123 @@
+{% extends 'base2.html' %}
+{% block content %}
+{% load static %}
+
+<link rel='stylesheet'  href='{% static "css/about.css"%}'></link>
+<script src='{% static "javascript/register.js"%}' defer ></script>
+
+    
+   
+<nav>
+    <div class='logo'>
+        <img src='{% static "images\music.png" %}' width=45>
+        <h2>Melodiam</h2>
+  
+    </div>
+    <div class='hamburger'>
+        <div class='line'></div>
+        <div class='line'></div>
+        <div class='line'></div>
+  
+  
+  
+    </div>
+    <ul class='nav-links'>
+        <li ><a href='{% url "melodiam" %}'>Home</a></li>
+        
+      
+        <li ><a href='{% url "contact" %}'>Contact</a></li>
+        <li ><a href='{% url "login"%}'>Login</a></li>
+
+        
+        
+        <li ><a href='{% url "register"%}'>Register</a></li>
+        
+  
+  
+    </ul>
+</nav>
+<div class='side'>
+    <div class='ist' >
+        <h2>What's Melodiam</h2>
+        <div >
+            
+            <img src='{% static "images/simon-noh-0rmby-3OTeI-unsplash.jpg" %}' width="100">
+            <h3>Melodiam is social-media platform which allows you to listen good quality of music for free , it also allows you to share you musical skills by posting your own music , so people who love music can listen it too .  </h3>
+
+        </div>
+        <hr>
+        
+        
+    </div>
+
+
+    <div class='ind' >
+        <h2>Our Aim</h2>
+        <div >
+            <h3>We aim to create a community which supports new talent  and help them grow by encouraging them .</h3>
+            <img src='{% static "images/anthony-delanoix-hzgs56Ze49s-unsplash.jpg" %}' width="100">
+            
+
+        </div>
+        <hr>
+        
+        
+    </div>
+
+    <div class='ird' >
+        <h2>Why Melodiam ?</h2>
+        <div >
+            
+            <img src='{% static "images/music3.jpg" %}' width="100">
+            <h3>Why melodiam if you can use instagram and facebook to gather support and following in order to grow in music industry ?<br>
+                What makes us different from the rest , is our motive and aim . No other social media platform can provide the support that we provide here , right now we are under development but the future updates will come with features like song quality detection using AI , producing lyrics automatically and comparison of user's sound with others .
+
+            </h3>
+
+        </div>
+    
+        
+        
+    </div>
+    
+    
+    
+    
+   
+    
+    
+</div>
+
+
+
+<footer class='footer'>
+   
+
+   <ul class="image">
+    <a href="https://stackoverflow.com/users/14537080/jogendra?tab=profile" target="_blank"><img  class='pin' src='{% static "images/stack.png" %}' width="45"></a>
+     <a href="https://www.instagram.com/joe_programmer/" target="_blank"><img  class='insta' src='{% static "images/instagram.png" %}' width=50></a>
+     <a href="https://github.com/Joe-Sin7h" target="_blank"><img class='fiverr' src='{% static "images/github.png" %}' width=45></a>
+
+   </ul>
+    
+    <ul class="end">
+        <img src='{% static "images/music.png" %}' width=50>
+
+        <h3>Melodiam</h3>
+
+    </ul>
+    
+
+
+</footer>
+
+
+
+
+    
+
+
+
+
+
+{% endblock %}

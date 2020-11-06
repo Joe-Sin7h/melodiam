@@ -1,0 +1,81 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+<link rel='stylesheet' href='{% static "css/profile.css"%}'>
+
+
+
+<div class="container">
+
+  <div class="profile">
+
+    <div class="profile-image">
+
+      <img  src='{{ user.profile.profilepic.url }}' width='85' height="85" alt="">
+
+    </div>
+
+    <div class="profile-user-settings">
+
+      <h1 class="profile-user-name">{{user.username}}</h1><br>
+
+      <a href='{% url "editprofile"%}'><button class="btn profile-edit-btn">Edit Profile</button></a>
+
+      <button class="btn profile-settings-btn" aria-label="profile settings"><i class="fas fa-cog" aria-hidden="true"><a href='{% url "settings"%}'><img  class='set' src='{% static "images/gear.png"%}' width=""></a></i></button>
+ 
+    </div>
+ 
+    <div class="profile-stats">
+
+      <ul>
+        <li><span class="profile-stat-count">{{total}}</span> posts</li>
+        <li><span class="profile-stat-count"><a href="{% url 'followerlist' %}">{{follower}}</a></span> followers</li>
+      <li><span class="profile-stat-count"><a href="{% url 'followinglist' %}">{{following}}</a></span> following</li>
+      </ul>
+
+    </div>
+ 
+    <div class="profile-bio">
+
+      <p><span class="profile-real-name">
+        {% if user.profile.name == 'False'%} 
+          {{user.username}}
+        {% else %}
+          {{user.profile.name}}
+        {% endif %}
+        <br><br>
+        </span>{{user.profile.bio }}</p>
+       
+
+    </div>
+
+  </div>
+  <!-- End of profile section -->
+
+</div>
+<!-- End of container -->
+
+
+<div class='grid'>
+  
+    {% for i in post %}
+  {% if i.artist == user %}
+    <div class='module'>
+      <a href='{% url "update" i.pk %}'><img src='{{i.cover.url}}'></a>
+    </div>
+  {% endif %}
+
+{% endfor %}
+</div> 
+<div class='block'></div>
+
+{% endblock %}
+
+  
+
+<!-- sdvfvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv -->
+
+
+
+
+

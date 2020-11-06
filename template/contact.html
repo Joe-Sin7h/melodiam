@@ -1,0 +1,93 @@
+{% extends 'base2.html'%}
+{% load static %}
+{% block content %}
+<link rel='stylesheet'  href='{% static "css/contact.css"%}'></link>
+<script src='{% static "javascript/register.js"%}' defer ></script>
+
+    
+   
+<nav>
+    <div class='logo'>
+        <img src='{% static "images\music.png" %}' width=45>
+        <h2>Melodiam</h2>
+  
+    </div>
+    <div class='hamburger'>
+        <div class='line'></div>
+        <div class='line'></div>
+        <div class='line'></div>
+  
+  
+  
+    </div>
+    <ul class='nav-links'>
+        <li ><a href='{% url "melodiam" %}'>Home</a></li>
+        
+        <li ><a href='{% url "about"%}'>About</a></li>
+       
+        <li ><a href='{% url "login"%}'>Login</a></li>
+        <li ><a href='{% url "register"%}'>Register</a></li>
+        
+  
+  
+    </ul>
+</nav>
+
+
+
+<form>
+    <legend>Melodiam</legend>
+    <h2 class='ist'>Contact us on following</h2>
+    <div >
+        <h3>@joe_programmer</h3>
+        <img src ='{% static "images/instagram.png" %}'>
+       
+    </div>
+    <div>
+        <h3>melodiam2music@gmail.com<br></h3>
+        <img src ='{% static "images/email.png" %}'>
+       
+    </div>
+    <div>
+        <h3>@Joe-Sin7h</h3>
+        <img src ='{% static "images/github.png" %}'>
+       
+    </div>
+    <div class='last'>
+        <h3>
+            " May those unheard melodies bring  you peace , even in the darkest of night "
+        </h3>
+        
+       
+    </div>
+   
+
+</form>
+<section>
+  
+  
+  
+</section>
+<small id='small'> Want to send your feedback ? <a href='{% url "login"%}'>login</a></small>
+
+<footer class='footer'>
+   
+
+    <ul class="image">
+     <a href="https://stackoverflow.com/users/14537080/jogendra?tab=profile" target="_blank"><img  class='pin' src='{% static "images/stack.png" %}' width="50"></a>
+     <a href="https://www.instagram.com/joe_programmer/" target="_blank"><img  class='insta' src='{% static "images/instagram.png" %}' width=50></a>
+     <a href="https://github.com/Joe-Sin7h" target="_blank"><img class='fiverr' src='{% static "images/github.png" %}' width=45></a>
+ 
+    </ul>
+     
+     <ul class="end">
+         <img src='{% static "images/music.png" %}' width=50>
+ 
+         <h3>Melodiam</h3>
+ 
+     </ul>
+     
+ 
+ 
+ </footer>
+{% endblock %}

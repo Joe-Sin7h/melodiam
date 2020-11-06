@@ -1,0 +1,77 @@
+{% extends 'base2.html' %}
+{% block content %}
+{% load static %}
+
+<link rel='stylesheet'  href='{% static "css/melodiam.css"%}'></link>
+<script src='{% static "javascript/melodiam.js"%}' defer ></script>
+<nav>
+    <div class='logo'>
+        <img src='{% static "images\music.png" %}' width=45>
+        <h2>Melodiam</h2>
+  
+    </div>
+    <div class='hamburger'>
+        <div class='line'></div>
+        <div class='line'></div>
+        <div class='line'></div>
+  
+  
+  
+    </div>
+    <ul class='nav-links'>
+       
+        
+        <li ><a href='{% url "about"%}'>About</a></li>
+        <li ><a href='{% url "contact"%}'>Contact</a></li>
+        <li ><a href='{% url "register"%}'>Register</a></li>
+        
+  
+  
+    </ul>
+</nav>
+
+<section class='landing'>
+        
+    
+        <a class='link' href='{% url "login"%}'>Login</a>
+        <a class='or'><h3>or</h3></a>
+        <a class='link' href='{% url "register"%}'>Register</a>
+    
+        
+         
+</section>
+   
+ 
+
+
+<footer class='footer'>
+   
+
+   <ul class="image">
+    <a href="https://in.pinterest.com/josingh_481/" target="_blank"><img  class='pin' src='{% static "images/pinterest.png" %}' width="50"></a>
+    <a href="https://www.instagram.com/joe_programmer/" target="_blank"><img  class='insta' src='{% static "images/instagram.png" %}' width=50></a>
+    <a href="https://www.fiverr.com/s2/522f1beb94?utm_source=com.google.android.gm_Mobile" target="_blank"><img class='fiverr' src='{% static "images/fiverr.png" %}' width=45></a>
+
+   </ul>
+    
+    <ul class="end">
+        <img src='{% static "images/music.png" %}' width=50>
+
+        <h3>Melodiam</h3>
+
+    </ul>
+    
+
+
+</footer>
+
+
+
+
+    
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/settings.css'%}">
+
+
+<ul >
+    <a class='set' href='{% url "editprofile" %}'><h2 class='first'>Edit</h2></a><br>
+    
+   
+
+    <a class='set' href='{% url "about" %}'><h2 class='sec'>About</h2></a><br>
+    <a class='set' href='{% url "contact" %}'><h2  class='sec'>Contact</h2></a><br>
+    
+    <a  class='set' href='{% url "create" %}'><h2  class='sec'>Create Post</h2></a><br>
+  
+
+    <a class='set' href='{% url "password_change"%}'><h2  class='sec'>Change Password</h2></a><br>
+    <a class='set' href='{% url "logout" %}'><h2  class='sec'>Logout</h2></a><br>
+
+</ul>
+
+{% endblock %}

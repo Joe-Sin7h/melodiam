@@ -1,0 +1,129 @@
+{% extends 'base.html' %} 
+{% block content %}
+{% load static %}
+<h3 class='melodiam'>melodiam</h3>
+<link rel="stylesheet" href="{% static 'css/home.css'%}" >
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src='{% static "javascript/index.js"%}' type='text/javascript'  ></script>
+ 
+
+ 
+<div class="hs__wrapper">
+  <div class="hs__header">
+    <h2 class="hs__headline">Truly Yours</h2>
+    <div class="hs__arrows">
+      <a class="arrow disabled arrow-prev"></a>
+      <a class="arrow arrow-next"></a>
+    </div>
+  </div>
+  <ul class="hs">
+    {% for i in random_five %}
+    <li class="hs__item"> 
+    
+      
+        <a class="hs__item__image__wrapper" href="{% url 'detail_user' i.id %}">
+          <img class="hs__item__image" src="{{i.cover.url}}" alt=""/>
+        </a>
+
+        
+        
+      
+   
+      <div class="hs__item__description">
+        <span class="hs__item__title">{{i.songname}}</span>
+        <span class="hs__item__subtitle">{{i.artist}}</span>
+      </div>
+    </li>
+    {% endfor %}
+
+
+
+
+  </ul>
+</div>
+
+
+<div class="hs__wrapper">
+  <div class="hs__header">
+    <h2 class="hs__headline">Recommended for today</h2>
+    <div class="hs__arrows">
+      <a class="arrow disabled arrow-prev"></a>
+      <a class="arrow arrow-next"></a>
+    </div>
+  </div>
+  <ul class="hs">
+    {% for i in random_sys %}
+    <li class="hs__item"> 
+      <a class="hs__item__image__wrapper" href='{% url "detail" i.id%}'>
+        <img class="hs__item__image" src="{{i.postcover.url}}" alt=""/>
+      </a>
+      <div class="hs__item__description">
+        <span class="hs__item__title">{{i.songname}}</span>
+        <span class="hs__item__subtitle">{{i.artist}}</span>
+      </div>
+    </li>
+    {% endfor %}
+
+
+
+
+  </ul>
+</div>
+
+
+  {% for k in heading %}
+    {% if k.head != 'False' %}
+  
+<div class="hs__wrapper">
+  <div class="hs__header">
+    <h2 class="hs__headline">{{k.head}}</h2>
+    <div class="hs__arrows">
+      <a class="arrow disabled arrow-prev"></a>
+      <a class="arrow arrow-next"></a>
+    </div>
+  </div>
+  <ul class="hs">
+    {% for s in special %}
+      {% if s.head == k.head %}
+    <li class="hs__item"> 
+      <!--  -->
+        <!-- <div class="hs__item__image__wrapper"> -->
+          <a class="hs__item__image__wrapper" href="{% url 'albumlist' s.title %}">
+            <img class="hs__item__image" src="{{s.cover.url}}" alt="zczcz"/>
+          </a>
+      <!-- </div> -->
+  
+      <div class="hs__item__description">
+        <span class="hs__item__title">{{s.title}}</span>
+        
+      </div>
+    <!--  -->
+      
+    </li>
+     
+      {% endif %}
+    {% endfor %}
+    {% endif %}
+  </ul>
+</div>
+
+
+    {% endfor %}
+
+    
+
+<div class="bottom"></div>
+
+<script>
+  
+var ele = document.getElementsByClassName("hs__item__subtitle")
+
+for(i=0;i<ele.length;i++){
+
+    if ((ele[i].innerText).length>17){
+        ele[i].innerText=String(ele[i].innerText).slice(0,13)+"....";
+        
+    }
+}
+</script>
+{% endblock %}

@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content='text/html' charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melodiam</title>
+</head>
+<link rel='stylesheet' href='{% static "css/base.css"%}'>
+<body> 
+    
+    <footer>
+        
+        <div>
+            <a href='{% url "systempost"%}'><img src='{% static "/images/house.png"%}'></a>
+   
+        
+        
+            <a href='{% url "search" %}'><img src='{% static "/images/search.png"%}'></a>
+              
+            <a href="{% url 'create'%}"><img src="{% static '/images/add.png'%}" alt=""></a>
+
+       
+       
+            <!-- <a href="#"><img src='{% static "/images/books.png"%}'></a> -->
+
+        
+       
+
+            <a href='{% url "profile"%}'><img src='{% static "/images/user.png"%}'></a>
+
+        </div>
+   
+        
+
+    </footer>
+    {% block content %}
+    
+    {% endblock %}
+    
+</body>
+</html>

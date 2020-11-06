@@ -1,0 +1,50 @@
+{% extends "base2.html"%}
+{% load crispy_forms_tags %}
+{% block content %}
+<form method='POST'>{% csrf_token%}
+    
+    
+    {{form|crispy}}
+
+<br/>
+<input  class='button' type='submit' value='Send'>
+
+</form>
+<style>
+    *{
+        margin: 0pt;
+        box-sizing: border-box;
+        padding: 0pt;
+    }
+    .requiredField{
+        display: none;
+    }
+
+    #id_content{
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 10px;
+
+        width: 80%;
+        margin-top: 10%;
+
+    }
+    #id_content:active{
+        outline-color: black;
+    }
+    #id_content:hover{
+        outline-color: black;
+    }
+   .button{
+       width: 40%;
+       height: 40px;
+       border-radius: 10px;
+       background-color: black;
+       color: darkturquoise;
+       font-weight: bold;
+       margin-left:30%;
+       margin-right: 30%;
+       
+   }
+</style>
+{% endblock %}

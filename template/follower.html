@@ -1,0 +1,61 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block content %}
+<h1>   followers</h1>
+<div class='table'></div>
+{% for i in ProfileUsers %}
+
+  <div class='block'>
+    <img src="{{i.profilepic.url}}" class='pro-pic' alt="">
+    <a class='name' href="{% url 'artist' i.user %}">{{i.user}}</a>
+    
+  
+  </div>
+</div>
+
+  
+<style> 
+  *{
+    margin :0px;
+    box-sizing: border-box;
+    padding:0px;
+  }
+  h1{
+     margin-left: 20px;
+  }
+  a{
+    text-decoration:none;
+  }
+  
+  .block{
+     position: relative;
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    margin-bottom:5px;
+    margin-top:5px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+
+  }
+  .pro-pic{
+    width:50px;
+    height: 50px;
+    margin-left:10%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 50px;
+  }
+  .name{
+    margin-bottom:15px ;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: darkturquoise;
+      }
+  
+</style>
+{% endfor %}
+{% endblock %} 

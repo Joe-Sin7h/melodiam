@@ -1,0 +1,64 @@
+{% extends 'base.html'%}
+{% load class_name %}
+{% load static %}
+
+
+{% block content %}
+        
+<link rel="stylesheet" href="{% static 'css/search.css'%}">
+        
+         
+{% for object in object_list %}
+    {% with object|class_name as klass %}
+      {% if klass == 'Post' %}
+          <div class='row'>
+             <div class='col'>
+                <a class='click' href='{% url "detail" object.id %}'> <img src="{{object.postcover.url}}" alt="error" ><h3> {{ object.songname}}</h3></a>
+              
+
+            </div>
+          </div>
+      {% elif klass == 'UserPost' %}
+          <div class='row'>
+            <div class='col'>
+              <a   class='click' href='{% url "detail_user" object.id %}'><img src='{{ object.cover.url}}'><h3>{{ object.songname}}</h3>  </a>
+            </div>
+          </div>
+      {% elif klass == 'Profile' %}
+          <div class='row'>
+            <div class='col'>
+               <a  class='click-artist'  href='{% url "artist" object.user %}'><img src="{{object.profilepic.url}}" alt="" ><h2>{{ object.name}}</h2>  <h3> {{object.user}}</h3></a>
+            </div>
+          </div>
+      {% else %}
+           <div class='row'>
+             <div class='col'>
+               Oops...........
+
+               No Result Found
+               <!-- zczcvcvx <a href='{{ object.get_absolute_url }}'>{{ object }} | {{ object|class_name }}</a> -->
+            </div>
+           </div>
+      {% endif %}
+        
+    {% endwith %}
+    
+{% empty %}
+
+
+<form method='GET' class='' action='.'>
+    
+    <div  style="margin-bottom: 0px; font-size: 32px;">
+        <span  style='color:#000'>
+            <i  ></i>
+        </span>
+        <input type="text" name="q" data-toggle="popover"   placeholder="Search" value="" style="" data-original-title="" title="" autofocus="autofocus" class='search-input'>
+        <input type='submit' for='q' class="search-button">
+
+    </div>
+
+</form>
+{% endfor %}
+
+
+{% endblock%}
