@@ -41,10 +41,7 @@ def editprofile(request):
 
     return render(request,'editprofile.html',locals())
    
-# class UserListView(ListView):
-#     model=UserPost
-#     template_name='profile.html'
-#     context_object_name='post'
+
 @login_required
 def UserListView(request):
     user=User.objects.get(username=request.user)
