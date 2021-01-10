@@ -22,13 +22,7 @@ class PostCreateView(CreateView,LoginRequiredMixin):
         form.instance.artist=self.request.user
         return super().form_valid(form)
 
-# def postcreate(request):
-#     form = PostCreate(request.POST or None)
-#     if form.is_valid():
-#         form.save()
-#         form = PostCreate()
-    
-#     return render(request,'createpost.html',{"form"})
+
 class PostUpdateView(UpdateView,LoginRequiredMixin):
     model=UserPost
     fields=[
