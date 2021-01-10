@@ -4,7 +4,7 @@ admin.site.register(Post)
 admin.site.register(UserPost)
 admin.site.register(Special)
 admin.site.register(Heading)
-# admin.site.register(Watchlater)
+
 admin.site.register(Following)
 admin.site.register(Like)
 admin.site.register(Comment)
