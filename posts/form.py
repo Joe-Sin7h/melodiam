@@ -25,18 +25,3 @@ class PostCreateForm(forms.Form):
             return song
         else:
             raise forms.ValidationError("couldn't read file")
-        # if '.mp3' not in song:
-        #     raise forms.ValidationError("File must be .Mp3 or .wav type")
-        # elif '.wav' not in song:
-        #     raise forms.ValidationError("File must be .Mp3 or .wav type")
-        # else:
-        #     return songif file._size > 4*1024*1024:
-    #     raise ValidationError("Audio file too large ( > 4mb )")
-    # if not file.content-type in ["audio/mpeg","audio/wav"]:
-    #     raise ValidationError("Content-Type is not mpeg")
-    # if not os.path.splitext(file.name)[1] in [".mp3",".wav"]:
-    #     raise ValidationError("Doesn't have proper extension")
-
-    #     return file
-    # else:
-    #     raise ValidationError("Couldn't read uploaded file")
